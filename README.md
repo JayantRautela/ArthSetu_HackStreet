@@ -1,9 +1,9 @@
 Team Name :- HackStreet
 
-Team Leader :- Jayant Singh Rautela
+Project Name :- ArthSetu
 
-Team Members :- Manas Pandey, Piyush Shukla , Harsh Awasthi
+Problem Statement :- Smart Tax or Subsidy Recommendation Engine.
 
-Track 2 :- Fintech, Governance And Security 
+Track :- 2 - Fintech, Governance And Security 
 
-Problem Statement 8 :- Smart Tax or Subsidy Recommendation Engine.
+Team Members - Jayant Singh Rautela, Manas Pandey, Harsh Awasthi, Piyush Shukla
