@@ -1,4 +1,3 @@
-import React from 'react'
 import { problems } from '../constants/data'
 
 export default function Problems() {
