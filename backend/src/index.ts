@@ -2,6 +2,7 @@ import express, { type Request, type Response } from "express";
 import dotenv from "dotenv";
 dotenv.config();
 import cors from "cors";
+import TaxRouter from "./routes/tax.route.js";
 
 const app = express();
 
@@ -18,6 +19,8 @@ app.get('/health-check', (req: Request, res: Response) => {
     message: "Server running fine"
   });
 }) 
+
+app.use('/api/v1/tax', TaxRouter);
 
 app.listen(PORT, () => {
   console.log(`Server started at http://localhost:${PORT}`);
