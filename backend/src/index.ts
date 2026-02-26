@@ -10,7 +10,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-  origin: process.env.FRONTEND_URL
+  origin: 'https://arth-setu-ten.vercel.app/'
 }));
 
 const PORT = process.env.PORT;
