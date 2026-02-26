@@ -42,7 +42,7 @@ export default function ChatContainer() {
 
     try {
       const response = await fetch(
-        "http://localhost:3333/api/v1/chat",
+        " https://arthsetu-hackstreet.onrender.com/api/v1/chat",
         {
           method: "POST",
           headers: {

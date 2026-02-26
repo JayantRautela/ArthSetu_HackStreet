@@ -43,7 +43,7 @@ export default function SchemeForm() {
     try {
       setLoading(true);
 
-      const response = await fetch("http://localhost:3333/api/v1/subsidy/recommend", {
+      const response = await fetch(" https://arthsetu-hackstreet.onrender.com/api/v1/subsidy/recommend", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

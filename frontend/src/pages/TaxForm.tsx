@@ -42,7 +42,7 @@ export default function TaxForm() {
       setLoading(true);
 
       const response = await fetch(
-        "http://localhost:3333/api/v1/tax/compare",
+        " https://arthsetu-hackstreet.onrender.com/api/v1/tax/compare",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
