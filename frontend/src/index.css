@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #2F5D7C;
+  --color-accent: #4DA1A9;
+  --color-soft: #F3F6F8;
+
+  --shadow-card: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+  --font-sans: ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  @apply bg-white text-gray-800;
+}
+
+@layer components {
+  @layer components {
+    .nav-link {
+      @apply relative text-gray-700 hover:text-blue-600 transition-all duration-300;
+    }
+
+    .nav-link::after {
+      content: "";
+      @apply absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+  }
+}
