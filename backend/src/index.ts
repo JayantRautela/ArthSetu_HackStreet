@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 dotenv.config();
 import cors from "cors";
 import TaxRouter from "./routes/tax.route.js";
+import SubisdyRouter from "./routes/subsidy.route.js";
 
 const app = express();
 
@@ -21,6 +22,7 @@ app.get('/health-check', (req: Request, res: Response) => {
 }) 
 
 app.use('/api/v1/tax', TaxRouter);
+app.use('/api/v1/subsidy', SubisdyRouter);
 
 app.listen(PORT, () => {
   console.log(`Server started at http://localhost:${PORT}`);
